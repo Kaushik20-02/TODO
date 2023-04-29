@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif 
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 1rem;
+    background: rgb(237,110,140);
+    background: linear-gradient(19deg, rgba(237,110,140,1) 36%, rgba(255,155,113,1) 70%);
+}
+.todo{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 1rem .5rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+h1{
+    margin-bottom: 2rem;
+    font-weight: bold;
+    font-size: 3rem;
+    color: rgb(169, 57, 255);
+}
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 1rem;
+    margin-bottom: 2.2rem;
+    padding-left: 1rem;
+}
+input{
+    flex: 1;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    font-weight: 15px;
+    padding: 1rem;
+    background: transparent;
+}
+button{
+    font-size: 18px;
+    padding: .8rem 1.3rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: rgb(193, 116, 252);
+    color: #fff;
+    font-weight: 500;
+    border-radius: .5rem;
+    transition: .5s;
+}
+button:hover{
+    background-color: #981ef6;
+}
+ul li{
+    list-style: none;
+    font-size: 1rem;
+    user-select: none;
+    cursor: pointer;
+    padding: .5rem;
+    position: relative;
+    margin-left: 2rem;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    background-color: #afafaf;
+    background-size: cover;
+    background-position: center;
+    left: -1.5rem;
+    top: .6rem;
+}
+.checked{
+    color: #8a7b96;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.checked::before{
+    background-color: rgb(153, 100, 245);
+}
+span{
+    position: absolute;
+    top: 8px;
+    right: 0;
+    width: 1.2rem;
+    height: 1.2rem;
+    color: #afafaf;
+    transition: .5s;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+span:hover{
+    color: #fff;
+    background-color: #9280a0;
+}
