@@ -11,8 +11,10 @@
     width: 100%;
     min-height: 100vh;
     padding: 1rem;
-    background: rgb(237,110,140);
-    background: linear-gradient(19deg, rgba(237,110,140,1) 36%, rgba(255,155,113,1) 70%);
+    background-image: url(stack.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .todo{
     width: 100%;
@@ -26,7 +28,7 @@ h1{
     margin-bottom: 2rem;
     font-weight: bold;
     font-size: 3rem;
-    color: rgb(169, 57, 255);
+    color: rgb(177, 107, 231);
 }
 .input{
     display: flex;
